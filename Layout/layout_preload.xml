@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center"
+    android:background="@drawable/wp1">
+    <TextView
+        android:text="«Я лучше умру молодым, бедным и пьяным, если меня будут обсуждать за ужином, 
+чем доживу до ста богатый, трезвый и никому не запомнившись. »"
+        android:layout_width="match_parent"
+        android:shadowColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="36dp"
+        android:id="@+id/textView1"
+        android:textColor="#ffffffff"
+        android:gravity ="center_horizontal|center_vertical"
+        android:fontFamily="sans-serif"
+        android:textSize="24dp"
+        android:layout_marginTop="220.2dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="23 июля 2021"
+        android:textColor="@android:color/white"
+        android:gravity="bottom"
+        android:layout_marginTop="140dp"
+        android:textSize="48dp"
+        android:layout_marginLeft="12dp" />
+    <TextView
+        android:text="Осталось всеголишь пару дней..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="#ffffffff"
+        android:textSize="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+
+
+
+
+</LinearLayout>
+  

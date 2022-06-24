@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#0C0223">
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/shape"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="11dp"
+        android:elevation="12dp"
+        android:layout_marginTop="25dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:id="@+id/timerLayout"
+        
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="До конца дня:"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/textView2"
+                android:textSize="25dp"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@fonts/INTRO.OTF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="➤"
+                android:padding="12dp"
+                android:gravity="right"
+                android:textSize="25dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="-15dp"
+                android:textAlignment="gravity"
+                android:layout_alignParentRight="true"
+                android:textColor="#ff00b8d4"
+                android:id="@+id/textView9" 
+             />
+        </RelativeLayout>
+        <TextView
+            android:text="23:01:11"
+            android:textSize="62dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="6dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:fontFamily="@fonts/INTRO.OTF" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Часы"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:fontFamily="@fonts/INTRO.OTF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="-4dp"
+                android:id="@+id/textView4" />
+            <TextView
+                android:text="Минуты"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="-4dp"
+                android:fontFamily="@fonts/INTRO.OTF"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+            <TextView
+                android:text="Секунды"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@fonts/INTRO.OTF"
+                android:id="@+id/textView6" />
+        </LinearLayout>
+        <TextView
+            android:text="2 июля 2021"
+            android:layout_gravity="bottom"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@fonts/INTRO.OTF"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView7" />
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:text="ТОП 3 ЗАДАЧИ НА СЕГОДНЯ"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_marginTop="20dp"
+        android:textSize="21dp"
+        android:textAlignment="center" />
+    <Button
+        android:text="Добавить задачу"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:background="@drawable/shape"
+        android:textColor="#ffffffff"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp" />
+    
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView1"
+        
+        android:elevation="50dp" />
+    
+
+
+</LinearLayout>

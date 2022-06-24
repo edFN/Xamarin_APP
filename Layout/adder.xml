@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom = "8dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:isScrollContainer="false"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id ="@+id/textViewList"
+            android:layout_marginTop ="8dp"
+            android:text ="Добавить новую задачу"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000" >
+        </TextView>
+        <TextView
+            android:id ="@+id/textViewrecyclerView"
+            android:layout_marginTop ="20dp"
+            android:text ="Название задачи"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@android:color/white"
+            android:id="@+id/textInputEditText1"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="-10dp"
+            android:textColorHint="#ffff7043"
+            android:textColorHighlight="#ffbf360c" />
+        <TextView
+            android:id ="@+id/textViewList2"
+            android:layout_marginTop ="20dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:text="Описание" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        <TextView
+            android:id ="@+id/textViewList3"
+            android:layout_marginTop ="20dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:text="DeadLine" />
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="291.6dp"
+            android:id="@+id/calendarView1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:minWidth="25px"
+            android:minHeight="25px">
+        </CalendarView>
+        <TextView
+            android:id ="@+id/textViewList4"
+            android:layout_marginTop ="20dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:text="Приоритет задачи" />
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Низкий"
+                android:layout_marginLeft="5dp"
+                android:textSize="12dp"
+                android:id="@+id/radioButton1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Средний"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/radioButton2"
+                android:textSize="12dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Высокий"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/radioButton3"
+                android:textSize="12dp"/>
+        </RadioGroup>
+        <Button
+            android:text="Добавить задачу"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+    </LinearLayout>
+</ScrollView>
